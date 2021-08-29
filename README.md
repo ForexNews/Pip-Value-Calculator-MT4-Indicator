@@ -28,10 +28,10 @@
 // Input parameters //
 extern double Lot_Size=1.00;   // Default Lot Size
 extern int Text_Size=9;  // Text Size
+extern int decimal=2; //Decimal
 extern color Text_Color=MintCream;  // Text Color
 extern color Panel_Color=SteelBlue;  // Panel Color
-extern int decimal=2; //Decimal
-Font_Setting="Arial Black";
+string Font_Setting="Arial Black";
 double point;
 
 // Check symbol digits //
