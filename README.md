@@ -45,7 +45,7 @@ int OnInit()
    return(INIT_SUCCEEDED);
 }
 
-// Calculation function //
+// Calculation function, Reference: https://www.mql5.com/en/docs/event_handlers/oncalculate//
 int OnCalculate(const int rates_total,
                 const int prev_calculated,
                 const datetime &time[],
