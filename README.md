@@ -25,7 +25,7 @@
 #property strict
 #property indicator_chart_window
 
-// Input parameters//
+// Input parameters //
 extern double Lot_Size=1.00;   // Default Lot Size
 extern int Text_Size=9;  // Text Size
 extern color Text_Color=MintCream;  // Text Color
@@ -34,7 +34,7 @@ extern int decimal=2; //Decimal
 Font_Setting="Arial Black";
 double point;
 
-// Check symbol digits//
+// Check symbol digits //
 int OnInit()
 {
    point=Point;
@@ -45,7 +45,7 @@ int OnInit()
    return(INIT_SUCCEEDED);
 }
 
-// Calculation function//
+// Calculation function //
 int OnCalculate(const int rates_total,
                 const int prev_calculated,
                 const datetime &time[],
@@ -60,7 +60,7 @@ int OnCalculate(const int rates_total,
    string Account_Currency=AccountInfoString(ACCOUNT_CURRENCY);
    double PipValue_Total=((((MarketInfo(Symbol(),MODE_TICKVALUE)*point)/MarketInfo(Symbol(),MODE_TICKSIZE))*Lot_Size));
 
-// Create panel and text Label on the screen//
+// Create panel and text Label on the screen //
    ObjectCreate("Main_Panel",OBJ_RECTANGLE_LABEL,0,0,0,0,0,0);
    ObjectSet("Main_Panel",OBJPROP_BGCOLOR,Panel_Color);
    ObjectSet("Main_Panel",OBJPROP_CORNER,0);
@@ -115,7 +115,7 @@ int OnCalculate(const int rates_total,
    return(rates_total); 
   }
   
-// Delete panel and text label when removing the indicator//
+// Delete panel and text label when removing the indicator //
 void OnDeinit(const int reason)
 {
    ObjectsDeleteAll(0,"Main_Panel");
