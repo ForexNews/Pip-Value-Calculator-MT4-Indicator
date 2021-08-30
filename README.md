@@ -2,7 +2,7 @@
 ![Pip-Value-Calculator Screen](https://forexnew.org/Download/Pip-Value-MT4-Indicator.png)
 - Indicator to automate Forex pip value calculations.
 - Coding for MetaTrader 4 Platform.
-- See working example at [Pip Value Indicator MT4](https://forexnew.org/คลังความรู้/pip-value-การคำนวน-lot/)
+- See working example at [Pip Value Indicator MT4](https://forexnew.org/คลังความรู้/pip-value-การคำนวน-lot/#indicators)
 
 ## Formula
 - Pip Value = (One Pip ÷ Exchange Rate) x Lot Size
